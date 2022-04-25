@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<script src="https://kit.fontawesome.com/c299b416fd.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/71ec5dd735.js" crossorigin="anonymous"></script>
 	<head>
 		
 		<title>mumble-voip modified Nightt#8899</title>
@@ -8,39 +8,57 @@
 		<style>
 
 			@font-face {
-				font-family: Frank;
-				src: url(/ui/franklin.ttf);
+				font-family: Boxed;
+				src: url(/ui/BoxedRound.ttf);
 			}
+
+			@font-face {
+				font-family: nightfont;
+				src: url(/ui/thisfont.ttf);
+			}
+
 			.info-container {
 				position: relative;
-				top: 960px;
-				left: 1750px;
-				text-align: left;
-				padding: 10px;
+				top: 968px;
+				left: 1744.99px;
+				text-align: center;
+				border-radius: 3px;
+				border-left: 2px solid white;
+				padding: 5.7px;
 				width: 58px;
-				font-family: Frank;
+				font-family: Boxed;
 				color: rgb(255, 255, 255);
 				font-size: 0.6vw;
 				background-color: black;
-				box-shadow: 1px 2px 8px 3px black;
 			}
 
 			.talking {
-				color: rgb(109, 109, 109);
+				color: rgb(144, 220, 130);
+			}
+
+			#mic-icon{
+				position: absolute;
+				color: rgb(0, 0, 0);
+				font-size: 0.75vw;
+				top: 93.3vh;
+				left: 158.3vh;
 			}
 
 			#name-container{
 				position: relative;
-				top: 960px;
-				left: 1750px;
-				text-align: left;
-				padding: 4px;
-				width: 25px;
-				font-family: Frank;
+				top: 92vh;
+				left: 157vh;
+				text-align: center;
+				border-radius: 3px;
+				padding: 3px;
+				padding-left: 20px;
+				padding-right: 10px;
+				height: 20px;
+				width: 26px;
+				font-family: Boxed;
 				color: rgb(0, 0, 0);
-				font-size: 0.9vw;
+				font-size: 0.7vw;
 				background-color: rgb(255, 255, 255);
-				box-shadow: 1px 2px 8px 3px rgb(255, 255, 255);
 			}
 
 			.radio-list-container {
@@ -183,8 +201,11 @@
 
 		<div class="radio-list-container" id="voip-radio-list"></div>
 		<div id="name-container">Voz</div>
+		<div>
+            <i class="fa-solid fa-microphone" id="mic-icon"></i>
+        </div>
 		<div class="info-container">
-			<div>	<i class="fas fa-microphone"></i> <span id="voip-mode"> INICIANDO</span></div>
+			<div> <span id="voip-mode"> INICIANDO</span></div>
 			<div id="voip-radio"></div>
 			<div id="voip-call"></div>
 			<div id="voip-warning"></div>

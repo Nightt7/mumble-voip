@@ -8,7 +8,8 @@ ui_page "ui/index.html"
 
 files {
 	"ui/index.html",
-	"/ui/franklin.ttf",
+	"/ui/BoxedRound.ttf",
+	"/ui/thisfont.ttf",
 	"ui/mic_click_on.ogg",
 	"ui/mic_click_off.ogg",
 }
